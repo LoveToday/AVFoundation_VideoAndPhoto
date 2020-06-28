@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPD-18-KT5">
+                                <rect key="frame" x="191.5" y="244" width="31" height="30"/>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="takePhotoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BvD-cx-Vun"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpZ-2m-RPb">
+                                <rect key="frame" x="191.5" y="344" width="31" height="30"/>
+                                <state key="normal" title="录制"/>
+                                <connections>
+                                    <action selector="takeVideoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gzO-Jh-DJi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mPD-18-KT5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="27R-Rz-nBt"/>
+                            <constraint firstItem="mPD-18-KT5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="Btb-LT-fhc"/>
+                            <constraint firstItem="hpZ-2m-RPb" firstAttribute="top" secondItem="mPD-18-KT5" secondAttribute="bottom" constant="70" id="LbE-Yu-bsQ"/>
+                            <constraint firstItem="hpZ-2m-RPb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fhB-UR-Y90"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="115"/>
+        </scene>
+    </scenes>
+</document>
