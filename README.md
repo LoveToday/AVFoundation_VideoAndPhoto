@@ -1,0 +1,2 @@
+# AVFoundation_VideoAndPhoto
+使用AVFoundation实现拍照以及录制
